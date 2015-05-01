@@ -1,0 +1,11 @@
+//- Пример использования contacts('b-contacts', '1', {'a':'google.com','b':'yandex.ru'})
+mixin contacts(classname, link, items)
+    address(class=classname)
+        ul(class=classname + '__list')
+            if link
+                each link,item in items
+                    li(class=classname + '__item ' + item)
+                        a(href='#' class=classname + '__item-link')=link
+            else 
+                each item in items
+                    li(class=classname + '__item ')=item

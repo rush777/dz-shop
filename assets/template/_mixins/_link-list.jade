@@ -1,0 +1,8 @@
+mixin link-list(classname, header, items)
+    nav(class=classname)
+        if header
+            div(class=classname + '__header')=header
+        ul(class=classname + '__list')
+            each item in items
+                li(class=classname + '__item')
+                    a(href='#' class=classname + '__item-link')=item
