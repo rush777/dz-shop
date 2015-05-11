@@ -1,0 +1,11 @@
+mixin slider(...slides)
+    article.b-slider
+        a.b-slider__button-prev(href="#") Пред.
+        a.b-slider__button-next(href="#") След.
+        ul.b-slider__list
+            each slide in slides
+                li.b-slider__item
+                    img.b-slider__image(src="#{slide.image}")
+                    .b-slider__description
+                        a.b-slider__description-link(href="#{slide.link}") #{slide.linkcapt}
+                        =slide.desc

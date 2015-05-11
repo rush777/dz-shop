@@ -1,0 +1,21 @@
+form.b-callback-form(action="#")
+    .b-callback-form__header Заказать звонок
+    .b-callback-form__row
+        label.b-callback-form__label(for="name") Ваше имя
+        input.b-callback-form__input-text(type="text" id="name" name="name" placeholder="Константин")
+    .b-callback-form__row
+        label.b-callback-form__label(for="phone") Ваш телефон
+        input.b-callback-form__input-text(type="text" id="phone" name="phone" placeholder="+7 (912) 000-00-00")
+    .b-callback-form__row
+        label.b-callback-form__label(for="date") Дата звонка
+        select.b-callback-form__select(id="day" name="day")
+            -for(var i=1; i<=31; i++)
+                option #{i}
+        select.b-callback-form__select(id="month" name="month")
+            -for(var i=1; i<=12; i++)
+                option #{i}
+    .b-callback-form__row
+        textarea.b-callback-form__input-textarea(id ="comment" name="comment" placeholder="Комментарий")
+    .b-callback-form__row
+        input.b-callback-form__input-submit(type="submit")
+        input.b-callback-form__input-reset(type="reset")

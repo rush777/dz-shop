@@ -1,8 +1,11 @@
+//-Пример использования
+//-link-list("b-footer-menu-left", "О магазине", {"О нас":"#","Наши цены":"#","Наши скидки":"#","Акции":"#"})
+
 mixin link-list(classname, header, items)
     nav(class=classname)
         if header
             div(class=classname + '__header')=header
         ul(class=classname + '__list')
-            each item in items
+            each link,item in items
                 li(class=classname + '__item')
-                    a(href='#' class=classname + '__item-link')=item
+                    a(href=link class=classname + '__item-link')=item

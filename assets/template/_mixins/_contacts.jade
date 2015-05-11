@@ -1,11 +1,10 @@
-//- Пример использования contacts('b-contacts', '1', {'a':'google.com','b':'yandex.ru'})
-mixin contacts(classname, link, items)
-    address(class=classname)
-        ul(class=classname + '__list')
-            if link
-                each link,item in items
-                    li(class=classname + '__item ' + item)
-                        a(href='#' class=classname + '__item-link')=link
-            else 
-                each item in items
-                    li(class=classname + '__item ')=item
+//- Пример использования contacts({'phone':'телефон','mail':'мыло'})
+mixin contacts(items)
+    address.b-contacts
+        ul.b-contacts__list
+            each label,name in items
+                if label
+                    li(class='b-contacts__item-' + name)
+                        a(href='#' class='b-contacts__link')=label
+                else
+                    li(class='b-contacts__item-' + name)=label

@@ -3,6 +3,48 @@ extends layout
 block title
     | index-page
     
+block sidebar
+    aside.b-aside
+        +logo("/img/logo.png","ЭпплShop")
+        include ./_includes/_form-callback
+        +gallery-tile({
+            "img/photo_03.png":"#",
+            "img/photo_05.png":"#",
+            "img/photo_07.png":"#",
+            "img/photo_12.png":"#",
+            "img/photo_13.png":"#",
+            "img/photo_14.png":"#",
+            "img/photo_18.png":"#",
+            "img/photo_19.png":"#",
+            "img/photo_20.png":"#",
+        })
+        +contacts({"adr":"г. Москва, ул. Новая 246, офис 214.","phone":"+7(921) 322-12-32"})
 block content
-    .b-main-container
-        
+    article.b-content
+        +slider({
+            image:'img/slide_1.png',
+            link:'#',
+            linkcapt:'Конкурс на концепт IPhone 7',
+            desc:'Выйграй iPad Air за самый необычный дизайн нового iPhone 7',
+            },
+            {
+            image:'img/slide_2.png',
+            link:'#',
+            linkcapt:'До 31 декабря, iPhone 4 за 9900 руб.',
+            desc:'Нет денег на шестой iPhone? Купи себе четвертый!',
+            },
+            {
+            image:'img/slide_3.png',
+            link:'#',
+            linkcapt:'iMac за пол цены',
+            desc:'Прини свой старый Mac  и получи скидку на новый!',
+            })
+        article.b-products
+            +stuff-section("Популярные товары",{
+                "img/stuff_09.png":"Apple Thunderb Display 27\"",
+                "img/stuff_03.png":"iMac 27\"",
+                "img/stuff_06.png":"iPhone 5s Gold"})
+            +stuff-section("Товары со скидкой",{
+                "img/stuff_18.png":"iPad Air Wi-Fi 128GB - Silver",
+                "img/stuff_15.png":"Apple iPod nano 7G 16 ГБ Blue",
+                "img/stuff_21.png":"Роутер Wi-Fi Apple AirPort"})

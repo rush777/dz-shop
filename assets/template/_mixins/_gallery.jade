@@ -1,0 +1,7 @@
+mixin gallery-tile(images)
+    article.b-gallery-tile
+        ul.b-gallery-tile__list
+            each link, image in images
+                li.b-gallery-tile__item
+                    a.b-gallery-tile__link(href=link)
+                        img.b-gallery-tile__image(src=image)
