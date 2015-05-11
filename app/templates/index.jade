@@ -1,4 +1,4 @@
-extends layout
+extends ./_layouts/_layout
 
 block title
     | index-page
@@ -8,33 +8,33 @@ block sidebar
         +logo("/img/logo.png","ЭпплShop")
         include ./_includes/_form-callback
         +gallery-tile({
-            "img/photo_03.png":"#",
-            "img/photo_05.png":"#",
-            "img/photo_07.png":"#",
-            "img/photo_12.png":"#",
-            "img/photo_13.png":"#",
-            "img/photo_14.png":"#",
-            "img/photo_18.png":"#",
-            "img/photo_19.png":"#",
-            "img/photo_20.png":"#",
+            "img/photo_03.jpg":"#",
+            "img/photo_05.jpg":"#",
+            "img/photo_07.jpg":"#",
+            "img/photo_12.jpg":"#",
+            "img/photo_13.jpg":"#",
+            "img/photo_14.jpg":"#",
+            "img/photo_18.jpg":"#",
+            "img/photo_19.jpg":"#",
+            "img/photo_20.jpg":"#",
         })
         +contacts({"adr":"г. Москва, ул. Новая 246, офис 214.","phone":"+7(921) 322-12-32"})
 block content
     article.b-content
         +slider({
-            image:'img/slide_1.png',
+            image:'img/slide_1.jpg',
             link:'#',
             linkcapt:'Конкурс на концепт IPhone 7',
             desc:'Выйграй iPad Air за самый необычный дизайн нового iPhone 7',
             },
             {
-            image:'img/slide_2.png',
+            image:'img/slide_2.jpg',
             link:'#',
             linkcapt:'До 31 декабря, iPhone 4 за 9900 руб.',
             desc:'Нет денег на шестой iPhone? Купи себе четвертый!',
             },
             {
-            image:'img/slide_3.png',
+            image:'img/slide_3.jpg',
             link:'#',
             linkcapt:'iMac за пол цены',
             desc:'Прини свой старый Mac  и получи скидку на новый!',

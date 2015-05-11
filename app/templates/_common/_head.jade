@@ -1,0 +1,28 @@
+head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(description='')
+    meta(keywords='')
+    meta(author='')
+    title
+        block title
+    link(rel='shortcut icon' type='image/x-icon' href='./favicon.ico')
+
+    block css
+        <!-- build:css css/vendor.min.css -->
+        // bower:css
+        link(rel='stylesheet', href='/bower/normalize.css/normalize.css')
+        // endbower 
+        <!-- endbuild -->
+
+        <!-- build:css fonts/fonts.min.css -->
+        <!-- endbuild -->
+
+        <!-- build:css css/main.min.css -->
+        link(rel="stylesheet", href="css/main.css") 
+        <!-- endbuild -->
+  
+    block scripts
+        <!-- build:js js/modernizr.min.js -->
+        script(src="bower/modernizr/modernizr.js")
+        <!-- endbuild -->

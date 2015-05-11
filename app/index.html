@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
+
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +9,28 @@
     <meta author="">
     <title>index-page</title>
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
-    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <script src="./js/vendor/modernizr/modernizr.js"></script>
+    <!-- build:css css/vendor.min.css -->
+    <!-- bower:css-->
+    <link rel="stylesheet" href="/bower/normalize.css/normalize.css">
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css fonts/fonts.min.css -->
+    <!-- endbuild -->
+    <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+    <!-- build:js js/modernizr.min.js -->
+    <script src="bower/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
   </head>
+
   <body>
     <div class="wrapper">
       <main class="b-main">
-        <aside class="b-aside"><a href="/" class="b-logo"><img src="/img/logo.png" class="b-logo__image"/><span class="b-logo__hidden-text">ЭпплShop</span></a>
+        <aside class="b-aside">
+          <a href="/" class="b-logo"><img src="/img/logo.png" class="b-logo__image" />
+            <div class="b-logo__hidden-text">ЭпплShop</div>
+          </a>
           <form action="#" class="b-callback-form">
             <div class="b-callback-form__header">Заказать звонок</div>
             <div class="b-callback-form__row">
@@ -86,38 +101,47 @@
           </form>
           <article class="b-gallery-tile">
             <ul class="b-gallery-tile__list">
-              <li class="b-gallery-tile__item"><a href="#" class="b-gallery-tile__link"><img src="img/photo_03.png" class="b-gallery-tile__image"/></a></li>
-              <li class="b-gallery-tile__item"><a href="#" class="b-gallery-tile__link"><img src="img/photo_05.png" class="b-gallery-tile__image"/></a></li>
-              <li class="b-gallery-tile__item"><a href="#" class="b-gallery-tile__link"><img src="img/photo_07.png" class="b-gallery-tile__image"/></a></li>
-              <li class="b-gallery-tile__item"><a href="#" class="b-gallery-tile__link"><img src="img/photo_12.png" class="b-gallery-tile__image"/></a></li>
-              <li class="b-gallery-tile__item"><a href="#" class="b-gallery-tile__link"><img src="img/photo_13.png" class="b-gallery-tile__image"/></a></li>
-              <li class="b-gallery-tile__item"><a href="#" class="b-gallery-tile__link"><img src="img/photo_14.png" class="b-gallery-tile__image"/></a></li>
-              <li class="b-gallery-tile__item"><a href="#" class="b-gallery-tile__link"><img src="img/photo_18.png" class="b-gallery-tile__image"/></a></li>
-              <li class="b-gallery-tile__item"><a href="#" class="b-gallery-tile__link"><img src="img/photo_19.png" class="b-gallery-tile__image"/></a></li>
-              <li class="b-gallery-tile__item"><a href="#" class="b-gallery-tile__link"><img src="img/photo_20.png" class="b-gallery-tile__image"/></a></li>
+              <li class="b-gallery-tile__item">
+                <a href="#" class="b-gallery-tile__link"><img src="img/photo_03.jpg" class="b-gallery-tile__image" /></a>
+              </li>
+              <li class="b-gallery-tile__item">
+                <a href="#" class="b-gallery-tile__link"><img src="img/photo_05.jpg" class="b-gallery-tile__image" /></a>
+              </li>
+              <li class="b-gallery-tile__item">
+                <a href="#" class="b-gallery-tile__link"><img src="img/photo_07.jpg" class="b-gallery-tile__image" /></a>
+              </li>
+              <li class="b-gallery-tile__item">
+                <a href="#" class="b-gallery-tile__link"><img src="img/photo_12.jpg" class="b-gallery-tile__image" /></a>
+              </li>
+              <li class="b-gallery-tile__item">
+                <a href="#" class="b-gallery-tile__link"><img src="img/photo_13.jpg" class="b-gallery-tile__image" /></a>
+              </li>
+              <li class="b-gallery-tile__item">
+                <a href="#" class="b-gallery-tile__link"><img src="img/photo_14.jpg" class="b-gallery-tile__image" /></a>
+              </li>
+              <li class="b-gallery-tile__item">
+                <a href="#" class="b-gallery-tile__link"><img src="img/photo_18.jpg" class="b-gallery-tile__image" /></a>
+              </li>
+              <li class="b-gallery-tile__item">
+                <a href="#" class="b-gallery-tile__link"><img src="img/photo_19.jpg" class="b-gallery-tile__image" /></a>
+              </li>
+              <li class="b-gallery-tile__item">
+                <a href="#" class="b-gallery-tile__link"><img src="img/photo_20.jpg" class="b-gallery-tile__image" /></a>
+              </li>
             </ul>
-          </article>
-          <address class="b-contacts">
-            <ul class="b-contacts__list">
-              <li class="b-contacts__item-adr"><a href="#" class="b-contacts__link">г. Москва, ул. Новая 246, офис 214.</a></li>
-              <li class="b-contacts__item-phone"><a href="#" class="b-contacts__link">+7(921) 322-12-32</a></li>
-            </ul>
-          </address>
-        </aside>
-        <article class="b-content">
+          </article><address class="b-contacts"><ul class="b-contacts__list"><li class="b-contacts__item-adr"><a href="#" class="b-contacts__link">г. Москва, ул. Новая 246, офис 214.</a></li><li class="b-contacts__item-phone"><a href="#" class="b-contacts__link">+7(921) 322-12-32</a></li></ul></address></aside>
+        <article
+        class="b-content">
           <article class="b-slider"><a href="#" class="b-slider__button-prev">Пред.</a><a href="#" class="b-slider__button-next">След.</a>
             <ul class="b-slider__list">
-              <li class="b-slider__item"><img src="img/slide_1.png" class="b-slider__image"/>
-                <div class="b-slider__description"><a href="#" class="b-slider__description-link">Конкурс на концепт IPhone 7</a>Выйграй iPad Air за самый необычный дизайн нового iPhone 7
-                </div>
+              <li class="b-slider__item"><img src="img/slide_1.jpg" class="b-slider__image" />
+                <div class="b-slider__description"><a href="#" class="b-slider__description-link">Конкурс на концепт IPhone 7</a>Выйграй iPad Air за самый необычный дизайн нового iPhone 7</div>
               </li>
-              <li class="b-slider__item"><img src="img/slide_2.png" class="b-slider__image"/>
-                <div class="b-slider__description"><a href="#" class="b-slider__description-link">До 31 декабря, iPhone 4 за 9900 руб.</a>Нет денег на шестой iPhone? Купи себе четвертый!
-                </div>
+              <li class="b-slider__item"><img src="img/slide_2.jpg" class="b-slider__image" />
+                <div class="b-slider__description"><a href="#" class="b-slider__description-link">До 31 декабря, iPhone 4 за 9900 руб.</a>Нет денег на шестой iPhone? Купи себе четвертый!</div>
               </li>
-              <li class="b-slider__item"><img src="img/slide_3.png" class="b-slider__image"/>
-                <div class="b-slider__description"><a href="#" class="b-slider__description-link">iMac за пол цены</a>Прини свой старый Mac  и получи скидку на новый!
-                </div>
+              <li class="b-slider__item"><img src="img/slide_3.jpg" class="b-slider__image" />
+                <div class="b-slider__description"><a href="#" class="b-slider__description-link">iMac за пол цены</a>Прини свой старый Mac и получи скидку на новый!</div>
               </li>
             </ul>
           </article>
@@ -126,9 +150,8 @@
               <ul class="b-stuff-list"></ul>
               <li class="b-stuff-item">
                 <div class="b-stuff-item__header">
-                  <div class="b-stuff-item__image-wrapper"><img src="img/stuff_09.png" alt="Apple Thunderb Display 27&quot;" class="b-item__image"/></div>
-                  <div class="b-stuff-item__title">Apple Thunderb Display 27&quot;
-                  </div>
+                  <div class="b-stuff-item__image-wrapper"><img src="img/stuff_09.png" alt="Apple Thunderb Display 27&quot;" class="b-item__image" /></div>
+                  <div class="b-stuff-item__title">Apple Thunderb Display 27&quot;</div>
                 </div>
                 <div class="b-stuff-description">
                   <div class="b-stuff-description__row">
@@ -155,9 +178,8 @@
               </li>
               <li class="b-stuff-item">
                 <div class="b-stuff-item__header">
-                  <div class="b-stuff-item__image-wrapper"><img src="img/stuff_03.png" alt="iMac 27&quot;" class="b-item__image"/></div>
-                  <div class="b-stuff-item__title">iMac 27&quot;
-                  </div>
+                  <div class="b-stuff-item__image-wrapper"><img src="img/stuff_03.png" alt="iMac 27&quot;" class="b-item__image" /></div>
+                  <div class="b-stuff-item__title">iMac 27&quot;</div>
                 </div>
                 <div class="b-stuff-description">
                   <div class="b-stuff-description__row">
@@ -184,9 +206,8 @@
               </li>
               <li class="b-stuff-item">
                 <div class="b-stuff-item__header">
-                  <div class="b-stuff-item__image-wrapper"><img src="img/stuff_06.png" alt="iPhone 5s Gold" class="b-item__image"/></div>
-                  <div class="b-stuff-item__title">iPhone 5s Gold
-                  </div>
+                  <div class="b-stuff-item__image-wrapper"><img src="img/stuff_06.png" alt="iPhone 5s Gold" class="b-item__image" /></div>
+                  <div class="b-stuff-item__title">iPhone 5s Gold</div>
                 </div>
                 <div class="b-stuff-description">
                   <div class="b-stuff-description__row">
@@ -216,9 +237,8 @@
               <ul class="b-stuff-list"></ul>
               <li class="b-stuff-item">
                 <div class="b-stuff-item__header">
-                  <div class="b-stuff-item__image-wrapper"><img src="img/stuff_18.png" alt="iPad Air Wi-Fi 128GB - Silver" class="b-item__image"/></div>
-                  <div class="b-stuff-item__title">iPad Air Wi-Fi 128GB - Silver
-                  </div>
+                  <div class="b-stuff-item__image-wrapper"><img src="img/stuff_18.png" alt="iPad Air Wi-Fi 128GB - Silver" class="b-item__image" /></div>
+                  <div class="b-stuff-item__title">iPad Air Wi-Fi 128GB - Silver</div>
                 </div>
                 <div class="b-stuff-description">
                   <div class="b-stuff-description__row">
@@ -245,9 +265,8 @@
               </li>
               <li class="b-stuff-item">
                 <div class="b-stuff-item__header">
-                  <div class="b-stuff-item__image-wrapper"><img src="img/stuff_15.png" alt="Apple iPod nano 7G 16 ГБ Blue" class="b-item__image"/></div>
-                  <div class="b-stuff-item__title">Apple iPod nano 7G 16 ГБ Blue
-                  </div>
+                  <div class="b-stuff-item__image-wrapper"><img src="img/stuff_15.png" alt="Apple iPod nano 7G 16 ГБ Blue" class="b-item__image" /></div>
+                  <div class="b-stuff-item__title">Apple iPod nano 7G 16 ГБ Blue</div>
                 </div>
                 <div class="b-stuff-description">
                   <div class="b-stuff-description__row">
@@ -274,9 +293,8 @@
               </li>
               <li class="b-stuff-item">
                 <div class="b-stuff-item__header">
-                  <div class="b-stuff-item__image-wrapper"><img src="img/stuff_21.png" alt="Роутер Wi-Fi Apple AirPort" class="b-item__image"/></div>
-                  <div class="b-stuff-item__title">Роутер Wi-Fi Apple AirPort
-                  </div>
+                  <div class="b-stuff-item__image-wrapper"><img src="img/stuff_21.png" alt="Роутер Wi-Fi Apple AirPort" class="b-item__image" /></div>
+                  <div class="b-stuff-item__title">Роутер Wi-Fi Apple AirPort</div>
                 </div>
                 <div class="b-stuff-description">
                   <div class="b-stuff-description__row">
@@ -303,11 +321,14 @@
               </li>
             </section>
           </article>
-        </article>
+          </article>
       </main>
     </div>
     <footer class="b-footer">
-      <div class="b-footer-container"><a href="/" class="b-logo"><img src="/img/logo.png" class="b-logo__image"/><span class="b-logo__hidden-text">ЭпплShop</span></a>
+      <div class="b-footer-container">
+        <a href="/" class="b-logo"><img src="/img/logo-footer.png" class="b-logo__image" />
+          <div class="b-logo__hidden-text">ЭпплShop</div>
+        </a>
         <nav class="b-footer-menu-left">
           <div class="b-footer-menu-left__header">О магазине</div>
           <ul class="b-footer-menu-left__list">
@@ -350,11 +371,16 @@
             </ul>
           </div>
         </div>
+        <!-- build:js js/vendor.js -->
+        <!--bower:js-->
+        <script src="/bower/jquery/dist/jquery.js"></script>
+        <!--endbower  -->
+        <!-- endbuild -->
+        <!-- build:js js/main.js -->
+        <script src="js/main.js"></script>
+        <!-- endbuild -->
       </div>
     </footer>
-    <!--JS-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery/jquery.min.js"><\/script>')</script>
-    <script src="js/main.js"></script>
   </body>
+
 </html>

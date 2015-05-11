@@ -1,6 +1,6 @@
 footer.b-footer
     .b-footer-container
-        +logo("/img/logo.png","ЭпплShop")
+        +logo("/img/logo-footer.png","ЭпплShop")
         +link-list("b-footer-menu-left", "О магазине", {
             "О нас":"#",
             "Наши цены":"#",
@@ -22,3 +22,13 @@ footer.b-footer
         .b-mobile-and-socials
             include ../_includes/_mobile-stores
             include ../_includes/_social
+            
+        <!-- build:js js/vendor.js --> 
+        //bower:js
+        script(src='/bower/jquery/dist/jquery.js')
+        //endbower  
+        <!-- endbuild -->
+        
+        <!-- build:js js/main.js --> 
+        script(src="js/main.js")
+        <!-- endbuild --> 

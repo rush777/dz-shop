@@ -1,0 +1,17 @@
+include ../_mixins/_link-list
+include ../_mixins/_contacts
+include ../_mixins/_gallery
+include ../_mixins/_slider
+include ../_mixins/_stuff-section
+include ../_mixins/_logo
+
+doctype html
+html(lang="ru-RU")
+    include ../_common/_head
+    body
+        .wrapper
+            main.b-main
+                block sidebar
+                block content
+                
+        include ../_common/_footer
