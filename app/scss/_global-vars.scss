@@ -1,0 +1,21 @@
+$background: #fff;
+$background-footer: #613993;
+$background-grey: #f4f6f9;
+
+
+$layout-width: 1000px;
+$page-width: $layout-width + 20px;
+$page-padding-top: 38px;
+$v-space: 15px;
+$footer-height: 238px;
+
+
+
+
+
+
+//Functions
+@mixin block-to-center($width) {
+    width: $width;
+    margin: 0 auto;
+}

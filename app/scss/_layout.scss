@@ -1,0 +1,52 @@
+@import "global-vars.scss";
+@import "util.scss";
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    min-width: $page-width;
+    height: auto!important;
+    overflow: hidden;
+
+    &:after {
+        content: "";
+        height: $footer-height;
+        display: block;
+    }
+}
+
+.b-main-container {
+    @extend .clearfix;
+    @include block-to-center($layout-width);
+    
+    padding-top: $page-padding-top;
+    margin-bottom: 70px; 
+    
+    .b-aside {
+        float: left;
+        width: 230px;
+    }
+    
+    .b-content {
+        float: right;
+        width: 740px;
+    }
+}
+
+footer {
+    position: relative;
+    min-width: $page-width;
+    height: $footer-height;
+    margin-top: -$footer-height;
+    background: $background-footer url('../img/footer_bg.png') repeat;
+
+    .b-footer-container {
+        @include block-to-center($layout-width);
+    }
+}

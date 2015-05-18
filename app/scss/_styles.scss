@@ -1,0 +1,130 @@
+@import "../fonts/fonts.css";
+
+* {
+    box-sizing: border-box;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+body {
+    font-family: 'elektra_light_proregular';
+    font-size: 14px;
+    line-height: 20px;
+    background: $background;
+    color: #5c7b98;
+}
+
+.b-logo-header {
+    margin-bottom: 18px;
+}
+
+.b-logo {
+    display: block;
+
+    &__hidden-text {
+        display: none;
+    }
+}
+
+.b-logo-footer {
+    float: left;
+    margin: 99px 120px 0 0;
+}
+
+.b-footer-menu {
+    float: left;
+    margin: 57px 72px 0 0;
+
+    &__header {
+        margin-bottom: 1px;
+        color: #ffffff;
+        font: 700 15px / 25px 'elektra_light_proregular';
+    }
+
+    &__list {
+        @extend .list-style-clear;
+    }
+
+    &__item-link {
+        color: #ffffff;
+        font: 400 15px / 25px 'elektra_light_proregular';
+    }
+}
+
+.b-mobile-and-socials {
+    float: left;
+    width: 185px;
+    margin-top: 72px;
+    margin-left: 46px;
+}
+
+.b-mobile {
+    margin-bottom: 26px;
+
+    &__list {
+        @extend .clearfix;
+        @extend .list-style-clear;
+
+        &-item {
+            float: left;
+            margin-right: 5px;
+            
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    &__store {
+        display: block;
+        width: 90px;
+        height: 32px;
+        text-indent: -10000000px;
+
+        &-apple {
+            background: url('../img/as_gp_stores.png') 0px 0px;
+        }
+
+        &-android {
+            background: url('../img/as_gp_stores.png') 90px 0px;
+        }
+    }
+}
+
+.b-social-networks {
+    &__list {
+        @extend .clearfix;
+        @extend .list-style-clear;
+
+        &-item {
+            float: left;
+            margin-right: 13px;
+            
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .b-social {
+        display: block;
+        width: 39px;
+        height: 39px;
+        background-image: url('../img/social.png');
+        text-indent: -10000000px;
+        
+        &-vk {
+            background-position: -3px 0px;
+        }
+
+        &-fb {
+            background-position: -55px 0px;
+        }
+
+        &-tw {
+            background-position: 42px 0px;
+        }
+    }
+}

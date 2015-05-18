@@ -1,0 +1,21 @@
+@import "util.scss";
+
+.b-gallery-tile {
+    @extend .clearfix;
+    margin-bottom: 20px;
+    
+    &__list {
+        @extend .list-style-clear;
+    }
+    
+    &__item {
+        float: left;
+        width: 70px;
+        height: 70px;
+        margin: 0 10px 10px 0;
+        
+        &:nth-child(3n) {
+            margin-right: 0px;
+        }
+    }
+}

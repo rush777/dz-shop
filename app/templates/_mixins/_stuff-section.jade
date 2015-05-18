@@ -1,27 +1,29 @@
 mixin stuff-section(header, items)
     section.b-stuff-section
-        span.b-stuff-section__header
+        .b-stuff-section__header
+            span.b-stuff-section__header-label #{header}
         ul.b-stuff-list
-        each item,image in items
-            li.b-stuff-item
-                .b-stuff-item__header
-                    .b-stuff-item__image-wrapper
-                        img(src=image, alt=item, class="b-item__image")
-                    .b-stuff-item__title
-                        =item
-                .b-stuff-description
-                    .b-stuff-description__row
-                        .b-stuff-description__label Артикул
-                        .b-stuff-description__value 42787825
-                    .b-stuff-description__row
-                        .b-stuff-description__label Опция
-                        .b-stuff-description__value включена
-                    .b-stuff-description__row
-                        .b-stuff-description__label Цвет
-                        .b-stuff-description__value серебристый
-                    .b-stuff-description__row
-                        .b-stuff-description__label Размер
-                        .b-stuff-description__value 42787825
-                    .b-stuff-description__row
-                        .b-stuff-description__label Вес
-                        .b-stuff-description__value 9 кг
+            each item,image in items
+                li.b-stuff-item
+                    a(href="#" class="b-stuff-item__link")
+                        .b-stuff-item__header
+                            .b-stuff-item__image-wrapper
+                                img(src=image, alt=item, class="b-item__image")
+                            .b-stuff-item__label
+                                =item
+                        .b-stuff-description
+                            .b-stuff-description__row
+                                .b-stuff-description__label Артикул
+                                .b-stuff-description__value 42787825
+                            .b-stuff-description__row
+                                .b-stuff-description__label Опция
+                                .b-stuff-description__value включена
+                            .b-stuff-description__row
+                                .b-stuff-description__label Цвет
+                                .b-stuff-description__value серебристый
+                            .b-stuff-description__row
+                                .b-stuff-description__label Размер
+                                .b-stuff-description__value 1280*1245*90
+                            .b-stuff-description__row
+                                .b-stuff-description__label Вес
+                                .b-stuff-description__value 9 кг

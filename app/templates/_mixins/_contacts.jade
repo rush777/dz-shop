@@ -1,10 +1,10 @@
 //- Пример использования contacts({'phone':'телефон','mail':'мыло'})
-mixin contacts(items)
+mixin contacts(...items)
     address.b-contacts
         ul.b-contacts__list
-            each label,name in items
-                if label
-                    li(class='b-contacts__item-' + name)
-                        a(href='#' class='b-contacts__link')=label
+            each item in items
+                if item.link
+                    li(class='b-contacts__item b-contacts__item_' + item.name)
+                        a(href=item.link class='b-contacts__link')=item.label
                 else
-                    li(class='b-contacts__item-' + name)=label
+                    li(class='b-contacts__item b-contacts__item_' + item.name)=item.label

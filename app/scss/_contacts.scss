@@ -1,0 +1,46 @@
+@import "util.scss";
+@import "global-vars.scss";
+
+.b-contacts {
+    height: 105px;
+    padding: 15px 0;
+    background-color: $background-grey;
+    
+    &__list {
+        @extend .list-style-clear;
+        font-style: normal;
+    }
+    
+    &__item {
+        margin-bottom: $v-space - 2px;
+        min-height: 22px;
+        padding-top: 1px;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    &__item_adr {
+        margin-left: 23px;
+        padding-left: 19px;
+        background: url(../img/geo.png) 0 0 no-repeat;
+    }
+    
+    &__item_phone {
+        margin-left: 43px;
+        padding-left: 20px;
+        background: url(../img/phone.png) 0 0 no-repeat;
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: #5c7b98;
+        
+        &:active,
+        &:visited,
+        &:hover {
+            color: #5c7b98;
+        }
+    }
+}

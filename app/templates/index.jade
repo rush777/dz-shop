@@ -5,7 +5,8 @@ block title
     
 block sidebar
     aside.b-aside
-        +logo("/img/logo.png","ЭпплShop")
+        .b-logo-header
+            +logo("/img/logo.png","ЭпплShop")
         include ./_includes/_form-callback
         +gallery-tile({
             "img/photo_03.jpg":"#",
@@ -18,7 +19,15 @@ block sidebar
             "img/photo_19.jpg":"#",
             "img/photo_20.jpg":"#",
         })
-        +contacts({"adr":"г. Москва, ул. Новая 246, офис 214.","phone":"+7(921) 322-12-32"})
+        +contacts({
+        name:"adr",
+        label:"г. Москва, ул. Новая 246, офис 214."
+        },
+        {
+        name:"phone",
+        label:"+7(921) 322-12-32",
+        link:"tel:+79213221232"
+        })
 block content
     article.b-content
         +slider({

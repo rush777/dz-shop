@@ -1,7 +1,7 @@
 mixin slider(...slides)
     article.b-slider
-        a.b-slider__button-prev(href="#") Пред.
-        a.b-slider__button-next(href="#") След.
+        a.b-slider__button.b-slider__button_prev(href="#") Пред.
+        a.b-slider__button.b-slider__button_next(href="#") След.
         ul.b-slider__list
             each slide in slides
                 li.b-slider__item

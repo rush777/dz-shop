@@ -1,0 +1,117 @@
+@import "util.scss";
+
+.b-stuff-section {
+    margin-bottom: 39px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__header {
+        font: 25px / 20px 'elektra_light_probold';
+        text-align: center;
+        overflow: hidden;
+        margin-bottom: 11px;
+
+        &:before,
+        &:after {
+            content: '';
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            margin: 0 0 0 -50%;
+            width: 50%;
+            left: 0;
+            border-bottom: 1px solid #5c7b98;
+        }
+
+        &:after {
+            margin: 0 -50% 0 0;
+        }
+
+        &-label {
+            min-width: 280px;
+            max-width: 500px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+}
+
+.b-stuff-list {
+    @extend .list-style-clear;
+    @extend .clearfix;
+}
+
+.b-stuff-item {
+    float: left;
+    width: 230px;
+    height: 234px;
+    margin-right: 25px;
+    border: 1px solid #dce2ec;
+    transition: all .3s ease;
+    
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    &:hover {
+        box-shadow: 0 1px 8px rgba(0,0,0,.15);
+    }
+    
+    &__link {
+        display: block;
+        height: 100%;
+    }
+    
+    &__header {
+        display: table;
+        padding: 0 11px 0 0;
+        margin-bottom: 10px;
+    }
+
+    &__image-wrapper {
+        display: table-cell;
+        width: 100px;
+        height: 110px;
+        vertical-align: middle;
+        text-align: center;
+
+        .b-item__image {
+            max-width: 100%;
+        }
+    }
+
+    &__label {
+        display: table-cell;
+        vertical-align: middle;
+        color: #00b9fe;
+        font: 400 15px / 20px 'elektra_light_proregular';
+    }
+}
+
+.b-stuff-description {
+    display: table;
+    padding: 0 14px;
+    width: 100%;
+    color: #5c7b98;
+    font: 400 14px / 20px 'elektra_light_proregular';
+    
+    &__row {
+        display: table-row;
+    }
+
+    &__label,
+    &__value {
+        display: table-cell;
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+

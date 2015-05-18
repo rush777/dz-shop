@@ -1,0 +1,104 @@
+@import "util.scss";
+
+$button-color: #f7f7f7;
+$slider-width: 740px;
+$slider-height: 300px;
+
+.b-slider {
+    position: relative;
+    width: $slider-width;
+    height: $slider-height;
+    margin-bottom: 41px;
+    overflow: hidden;
+
+    &__button {
+        position: absolute;
+        bottom: 163px;
+        width: 63px;
+        height: 34px;
+        text-align: center;
+        padding: 7px 0; 
+        color: #5c7b98;
+        font: 17px 'elektra_light_probold';
+        background-color: $button-color;
+        text-decoration: none;
+        z-index: 10000;
+
+        &_prev {
+            left: 17px;
+
+            &:before {
+                position: absolute;
+                right: 100%;
+                top: 0px;
+                content: '';
+                width: 0px;
+                height: 0px;
+                border-right: 7px solid $button-color;
+                border-top: 17px solid transparent;
+                border-bottom: 17px solid transparent;
+            }
+
+            &:hover:before {
+                border-color: transparent #00b9fe transparent transparent;
+            }
+        }
+
+        &_next {
+            right: 17px;
+
+            &:after {
+                position: absolute;
+                left:100%;
+                top:0;
+                content: '';
+                width: 0;
+                height: 0;
+                border-top: 17px solid transparent;
+                border-bottom: 17px solid transparent;
+                border-left: 7px solid $button-color;
+            }
+
+            &:hover:after {
+                border-color: transparent transparent transparent #00b9fe;
+            }
+        }
+
+        &:active,
+        &:hover {
+            color: #fff;
+            background: #00b9fe;
+        }
+    }
+
+    &__list {
+        @extend .clearfix;
+        @extend .list-style-clear;
+        position: relative;
+        left: 0;
+        width: 20000px;
+        transition: all .3s;
+    }
+
+    &__item {
+        float: left;
+    }
+
+    &__description {
+        position: absolute;
+        bottom: 7px;
+        width: $slider-width;
+        height: 76px;
+        padding: 18px 23px;
+        background-color: rgba(0,0,0,0.55);
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 23px;
+        
+        &-link {
+            display: block;
+            color: #00b9fe;
+            font-size: 18px;
+        }
+    }
+}

@@ -1,19 +1,20 @@
 footer.b-footer
     .b-footer-container
-        +logo("/img/logo-footer.png","ЭпплShop")
-        +link-list("b-footer-menu-left", "О магазине", {
+        .b-logo-footer
+            +logo("/img/logo-footer.png","ЭпплShop")
+        +link-list("b-footer-menu", "О магазине", {
             "О нас":"#",
             "Наши цены":"#",
             "Наши скидки":"#",
             "Акции":"#"
         })
-        +link-list("b-footer-menu-center", "Каталог", {
+        +link-list("b-footer-menu", "Каталог", {
             "Смартфоны":"#",
             "Планшеты":"#",
             "Компьютеры":"#",
             "Аксессуары":"#"
         })
-        +link-list("b-footer-menu-right", "Контакты", {
+        +link-list("b-footer-menu", "Контакты", {
             "Телефоны":"#",
             "Адреса":"#",
             "Карта проезда":"#",

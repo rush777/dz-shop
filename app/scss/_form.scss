@@ -1,0 +1,83 @@
+@import "util.scss";
+@import "global-vars.scss";
+
+.b-callback-form {
+    margin-bottom: $v-space;
+    padding: $v-space 11px;
+    background-color: $background-grey;
+
+    &__header {
+        margin-bottom: 20px;
+        font: 25px / 23px 'elektra_light_probold';
+        color: #5c7b98;
+    }
+
+    &__row {
+        @extend .clearfix;
+        margin-bottom: $v-space;
+        
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    &__label {
+        float: left;
+        margin-top: 5px;
+        color: #5c7b98;
+        font: 14px / 20px 'elektra_light_proregular';
+    }
+
+    &__input {
+        float: right;
+        height: 26px;
+        font: 400 12px / 19px 'elektra_light_proregular';
+        border: 1px solid darken($background, 10%);
+        input::-webkit-input-placeholder { color: #dae1eb; }
+        input:-moz-placeholder { color: #dae1eb; }
+    }
+    
+    &__input_text {
+        width: 133px;
+        padding: 6px;
+    } 
+
+    &__select-container {
+        float: right;
+        
+        .b-callback-form__select {
+            width: 51px;
+            padding: 2px;
+            
+            &:first-child {
+                float: left;
+                margin-right: 9px;
+            }
+        }
+    }
+    
+    &__input_textarea {
+        width: 209px;
+        height: 69px;
+        padding: 6px 9px;
+        resize: none;
+    }
+    
+    &__button {
+        width: 90px;
+        height: 35px;
+        color: #ffffff;
+        font: 700 15px / 39px "elektra_light_probold";
+        border: none;
+        
+        &_submit {
+            float: left;
+            background: #00b9fe;
+        }
+        
+        &_reset {
+            float: right;
+            background: darken($background, 10%);
+        }
+    }
+}

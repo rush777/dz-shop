@@ -31,7 +31,7 @@ gulp.task('jade', function() {
     gulp.src('app/templates/*.jade')
         .pipe(jade())
         .on('error', log)
-        .pipe(prettify({indent_size: 2}))
+        .pipe(prettify({indent_size: 4}))
         .pipe(gulp.dest('app/'))
         .pipe(reload({stream: true}));
 });
