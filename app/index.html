@@ -34,76 +34,119 @@
                             <div class="b-logo__hidden-text">ЭпплShop</div>
                         </a>
                     </div>
-                    <form action="#" class="b-callback-form">
-                        <div class="b-callback-form__header">Заказать звонок</div>
-                        <div class="b-callback-form__row">
-                            <label for="name" class="b-callback-form__label">Ваше имя</label>
-                            <input type="text" id="name" name="name" placeholder="Константин" class="b-callback-form__input b-callback-form__input_text">
-                        </div>
-                        <div class="b-callback-form__row">
-                            <label for="phone" class="b-callback-form__label">Телефон</label>
-                            <input type="text" id="phone" name="phone" placeholder="+7 (912) 000-00-00" class="b-callback-form__input b-callback-form__input_text">
-                        </div>
-                        <div class="b-callback-form__row">
-                            <label for="date" class="b-callback-form__label">Дата звонка</label>
-                            <div class="b-callback-form__select-container">
-                                <select id="day" name="day" class="b-callback-form__input b-callback-form__select">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>7</option>
-                                    <option>8</option>
-                                    <option>9</option>
-                                    <option>10</option>
-                                    <option>11</option>
-                                    <option>12</option>
-                                    <option>13</option>
-                                    <option>14</option>
-                                    <option>15</option>
-                                    <option>16</option>
-                                    <option>17</option>
-                                    <option>18</option>
-                                    <option>19</option>
-                                    <option>20</option>
-                                    <option>21</option>
-                                    <option>22</option>
-                                    <option>23</option>
-                                    <option>24</option>
-                                    <option>25</option>
-                                    <option>26</option>
-                                    <option>27</option>
-                                    <option>28</option>
-                                    <option>29</option>
-                                    <option>30</option>
-                                    <option>31</option>
-                                </select>
-                                <select id="month" name="month" class="b-callback-form__input b-callback-form__select">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>7</option>
-                                    <option>8</option>
-                                    <option>9</option>
-                                    <option>10</option>
-                                    <option>11</option>
-                                    <option>12</option>
-                                </select>
+                    <div class="b-callback-form">
+                        <form action="#" method="post">
+                            <div class="b-callback-form__header">Заказать звонок</div>
+                            <div class="b-callback-form__row">
+                                <label for="name" class="b-callback-form__label">Ваше имя</label>
+                                <input type="text" id="name" name="name" placeholder="Константин" class="b-callback-form__input b-callback-form__input_text">
                             </div>
-                        </div>
-                        <div class="b-callback-form__row">
-                            <textarea id="comment" name="comment" placeholder="Комментарий" class="b-callback-form__input b-callback-form__input_textarea"></textarea>
-                        </div>
-                        <div class="b-callback-form__row">
-                            <input type="submit" class="b-callback-form__button b-callback-form__button_submit">
-                            <input type="reset" class="b-callback-form__button b-callback-form__button_reset">
-                        </div>
-                    </form>
+                            <div class="b-callback-form__row">
+                                <label for="phone" class="b-callback-form__label">Телефон</label>
+                                <input type="text" id="phone" name="phone" placeholder="+7 (912) 000-00-00" class="b-callback-form__input b-callback-form__input_text">
+                            </div>
+                            <div class="b-callback-form__row">
+                                <label for="date" class="b-callback-form__label">Дата звонка</label>
+                                <div class="b-callback-form__select-container">
+                                    <select id="hour" name="hour" class="b-callback-form__input b-callback-form__select">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                        <option>17</option>
+                                        <option>18</option>
+                                        <option>19</option>
+                                        <option>20</option>
+                                        <option>21</option>
+                                        <option>22</option>
+                                        <option>23</option>
+                                        <option>24</option>
+                                    </select>
+                                    <select id="min" name="min" class="b-callback-form__input b-callback-form__select">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                        <option>17</option>
+                                        <option>18</option>
+                                        <option>19</option>
+                                        <option>20</option>
+                                        <option>21</option>
+                                        <option>22</option>
+                                        <option>23</option>
+                                        <option>24</option>
+                                        <option>25</option>
+                                        <option>26</option>
+                                        <option>27</option>
+                                        <option>28</option>
+                                        <option>29</option>
+                                        <option>30</option>
+                                        <option>31</option>
+                                        <option>32</option>
+                                        <option>33</option>
+                                        <option>34</option>
+                                        <option>35</option>
+                                        <option>36</option>
+                                        <option>37</option>
+                                        <option>38</option>
+                                        <option>39</option>
+                                        <option>40</option>
+                                        <option>41</option>
+                                        <option>42</option>
+                                        <option>43</option>
+                                        <option>44</option>
+                                        <option>45</option>
+                                        <option>46</option>
+                                        <option>47</option>
+                                        <option>48</option>
+                                        <option>49</option>
+                                        <option>50</option>
+                                        <option>51</option>
+                                        <option>52</option>
+                                        <option>53</option>
+                                        <option>54</option>
+                                        <option>55</option>
+                                        <option>56</option>
+                                        <option>57</option>
+                                        <option>58</option>
+                                        <option>59</option>
+                                        <option>60</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="b-callback-form__row">
+                                <textarea id="comment" name="comment" placeholder="Комментарий" class="b-callback-form__input b-callback-form__input_textarea"></textarea>
+                            </div>
+                            <div class="b-callback-form__row">
+                                <input type="submit" class="b-callback-form__button b-callback-form__button_submit">
+                                <input type="reset" class="b-callback-form__button b-callback-form__button_reset">
+                            </div>
+                        </form>
+                    </div>
                     <article class="b-gallery-tile">
                         <ul class="b-gallery-tile__list">
                             <li class="b-gallery-tile__item">

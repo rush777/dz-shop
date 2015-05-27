@@ -18,6 +18,11 @@ body {
 
 .b-logo-header {
     margin-bottom: 18px;
+    
+    .b-logo__image {
+        max-width: 199px;
+        max-height: 57px;
+    }
 }
 
 .b-logo {
@@ -31,6 +36,11 @@ body {
 .b-logo-footer {
     float: left;
     margin: 99px 120px 0 0;
+    
+    .b-logo__image {
+        max-width: 139px;
+        max-height: 39px;
+    }
 }
 
 .b-footer-menu {
@@ -114,7 +124,7 @@ body {
         height: 39px;
         background-image: url('../img/social.png');
         text-indent: -10000000px;
-        
+
         &-vk {
             background-position: -3px 0px;
         }
